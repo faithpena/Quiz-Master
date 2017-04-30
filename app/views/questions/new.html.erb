@@ -1,0 +1,15 @@
+<h1>Make new question</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(@question) do |f| %>
+      <%= f.label :content %>
+      <%= f.text_field :content %>
+
+      <%= f.label :answer %>
+      <%= f.text_field :answer %>
+
+      <%= f.submit "Create question", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
