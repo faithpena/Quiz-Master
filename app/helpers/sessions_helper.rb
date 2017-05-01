@@ -16,4 +16,16 @@ module SessionsHelper
     session.delete(:user_id)
     @current_user = nil
   end
+
+  def create_score
+    session[:score] = 0
+  end
+  
+  def update_score
+     session[:score] += 1
+  end
+
+  def delete_score
+    session.delete(:score)
+  end
 end

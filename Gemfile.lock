@@ -112,6 +112,8 @@ GEM
     notiffany (0.1.1)
       nenv (~> 0.1)
       shellany (~> 0.0)
+    numbers_in_words (0.4.0)
+      activesupport
     pg (0.18.4)
     pry (0.10.4)
       coderay (~> 1.1.0)
@@ -206,6 +208,7 @@ DEPENDENCIES
   jquery-rails (= 4.1.1)
   listen (= 3.0.8)
   minitest-reporters (= 1.1.9)
+  numbers_in_words
   pg (= 0.18.4)
   puma (= 3.4.0)
   rails (= 5.0.1)
