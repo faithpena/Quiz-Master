@@ -2,11 +2,6 @@
 
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
-   <% flash.each do |message_type, message| %>
-	  <script>alert("<%= message %>")</script>
-	  <% flash.clear %>
-   <% end %>
-
    <%= form_for(@answer, url: check_quiz_path) do %>
       <%= @answer.content %>
       <%= text_field_tag :answer %>
@@ -15,7 +10,7 @@
    <% end %>
 
    <div id="score">
-	  Score: <%= score %>
+	  Score: <%= session[:score] %>
    </div>
 
   </div>

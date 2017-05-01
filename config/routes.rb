@@ -7,7 +7,6 @@ Rails.application.routes.draw do
   root 'static_pages#home'
   get '/new', to: 'questions#new'
   get '/quiz', to: 'quiz_mode#quiz'
-  get '/new_quiz', to: 'quiz_mode#new_quiz'
   get '/new_user', to: 'users#new'
   get    '/login',   to: 'sessions#new'
   post   '/login',   to: 'sessions#create'
