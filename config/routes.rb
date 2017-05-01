@@ -6,8 +6,10 @@ Rails.application.routes.draw do
   get '/new', to: 'questions#new'
   get '/quiz', to: 'quiz_mode#quiz'
   get '/new_quiz', to: 'quiz_mode#new_quiz'
+  get '/new_user', to: 'users#new'
   post '/check_quiz', to: 'quiz_mode#check_quiz'
   post '/new', to: 'questions#create'
+  post '/signup',  to: 'users#create'
   resources :questions
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :users
 end
