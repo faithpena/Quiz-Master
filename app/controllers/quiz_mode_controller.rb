@@ -17,7 +17,7 @@ class QuizModeController < ApplicationController
       redirect_to quiz_path
   	else
       flash[:warning] = "Incorrect! The correct answer is " + @question.answer + "."
-      flash[:danger] = "Game Over. Your final score is #{session[:score]}"
+      flash[:danger] = "Your final score is #{session[:score]}."
       delete_score
   		redirect_to current_user
   	end
