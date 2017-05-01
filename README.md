@@ -1,24 +1,17 @@
 # README
+Quiz Master
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Configuration
 
-Things you may want to cover:
+* Clone the repository to your local machine
+* Run "bundle install"
+* Run "rails db:migrate"
+* Run "rails server"
+* Open your browser and go to "localhost:3000"
 
-* Ruby version
+How to Use
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Create an account
+* Create a question
+* Take the quiz (Everyone gets random questions from the database)
+* Score high points!
