@@ -6,7 +6,7 @@ class QuestionTest < ActiveSupport::TestCase
   end
 
   test "should be valid" do
-	assert @question.valid?  	
+	 assert @question.valid?  	
   end
 
   test "content should be present" do
