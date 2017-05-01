@@ -8,14 +8,14 @@
    <% end %>
 
    <%= form_for(@answer, url: check_quiz_path) do %>
-      <%= @answer.content %>
-      <%= text_field_tag :answer %>
+      <h1><%= @answer.content %></h1>
+      <%= text_area_tag :answer %>
       <%= hidden_field_tag "id", @answer.id %>
-      <%= submit_tag "Answer question" %>
+      <%= submit_tag "Answer question", class: "btn btn-lg btn-primary" %>
    <% end %>
 
    <div id="score">
-	  Score: <%= score %>
+    <h3>Score: <%= score %></h3>
    </div>
 
   </div>

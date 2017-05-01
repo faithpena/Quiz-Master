@@ -13,7 +13,7 @@ section {
 }
 
 textarea {
-  resize: vertical;
+  resize: none;
 }
 
 .center {
@@ -69,43 +69,6 @@ p {
   text-decoration: none;
 }
 
-/* sidebar */
-
-aside {
-  section.user_info {
-    margin-top: 20px;
-  }
-  section {
-    padding: 10px 0;
-    margin-top: 20px;
-    &:first-child {
-      border: 0;
-      padding-top: 0;
-    }
-    span {
-      display: block;
-      margin-bottom: 3px;
-      line-height: 1;
-    }
-    h1 {
-      font-size: 1.4em;
-      text-align: left;
-      letter-spacing: -1px;
-      margin-bottom: 3px;
-      margin-top: 0px;
-    }
-  }
-}
-
-.gravatar {
-  float: left;
-  margin-right: 10px;
-}
-
-.gravatar_edit {
-  margin-top: 15px;
-}
-
 /* mixins, variables, etc. */
 
 $gray-medium-light: #eaeaea;
@@ -118,7 +81,7 @@ $gray-medium-light: #eaeaea;
 
 /* forms */
 
-input, textarea, select, .uneditable-input {
+input, text_field_tag, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
   width: 100%;
   margin-bottom: 15px;
@@ -143,3 +106,13 @@ input {
     color: $state-danger-text;
   }
 }
+
+/* buttons */
+
+.button2, submit_tag{
+  color: #bbbbbb;
+  width: 200px;
+  height: 100px;
+  /*add any other properties you want to style*/
+}
+
