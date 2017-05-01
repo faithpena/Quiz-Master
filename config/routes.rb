@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'users/new'
+
   root 'static_pages#home'
   get '/new', to: 'questions#new'
   get '/quiz', to: 'quiz_mode#quiz'
